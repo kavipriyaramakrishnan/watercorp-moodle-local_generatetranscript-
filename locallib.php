@@ -61,7 +61,6 @@ function local_generatetranscript_pdf() {
               <tr>
               <td width=\"40%\"><font color=rgb(34, 66, 111)><b>".get_string('course', 'local_generatetranscript'). "</b></font></td>
               <td align='center'><font color=rgb(34, 66, 111)><b>".get_string('completed', 'local_generatetranscript'). "</b></font></td>
-              <td align='center'><font color=rgb(34, 66, 111)><b>".get_string('issuedate', 'local_generatetranscript'). "</b></font></td>
               </tr>
               </table>";
     $pdf->SetXY(10, 90);
@@ -79,7 +78,6 @@ function local_generatetranscript_pdf() {
         $table2 .= "<tr>
                      <td width=\"40%\"><font color=rgb(226, 42, 36)>".$tr->coursename."</font></td>
                      <td align='center'><font color=rgb(226, 42, 36)>".$tr->timecompleted."</font></td>
-                     <td align='center'><font color=rgb(226, 42, 36)>".$tr->cert_issue_date."</font></td>
                     </tr>";
     }
     
