@@ -59,7 +59,7 @@ function local_generatetranscript_pdf() {
     
     $table = "<table border='0'>
               <tr>
-              <td width=\"40%\"><font color=rgb(34, 66, 111)><b>".get_string('course', 'local_generatetranscript'). "</b></font></td>
+              <td width=\"70%\"><font color=rgb(34, 66, 111)><b>".get_string('course', 'local_generatetranscript'). "</b></font></td>
               <td align='center'><font color=rgb(34, 66, 111)><b>".get_string('completed', 'local_generatetranscript'). "</b></font></td>
               </tr>
               </table>";
@@ -76,7 +76,7 @@ function local_generatetranscript_pdf() {
     $table2 = '<table border="0">';
     foreach ($transcriptrecords as $tr) {
         $table2 .= "<tr>
-                     <td width=\"40%\"><font color=rgb(226, 42, 36)>".$tr->coursename."</font></td>
+                     <td width=\"70%\"><font color=rgb(226, 42, 36)>".$tr->coursename."</font></td>
                      <td align='center'><font color=rgb(226, 42, 36)>".$tr->timecompleted."</font></td>
                     </tr>";
     }
